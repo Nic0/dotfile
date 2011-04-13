@@ -123,7 +123,8 @@ nmap <F9> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR>
 let Tlist_Ctags_Cmd = "/usr/bin/ctags"
 let Tlist_WinWidth = 40
 " remap le saut de fichier/class/fnt avec ctags
-nmap C <C-]>
+nmap <leader>d <C-t>
+nmap <leader>v <C-]>
 
 " Le bépo, c'est le bien !
 source /etc/vimrc.bepo
