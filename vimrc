@@ -127,3 +127,6 @@ nmap <leader>v <C-]>
 
 " Le bépo, c'est le bien !
 source /etc/vimrc.bepo
+
+" Templates
+au bufNewFile *.php 0r /usr/share/vim/vimfiles/template/php.php
