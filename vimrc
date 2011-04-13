@@ -33,7 +33,6 @@ set sm "affiche la parenthèse correspondante
 set title
 set wildmenu
 set noea
-set ruler
 set pt=<F11>
 " Redefinition de l'indentation
 set expandtab
