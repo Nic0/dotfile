@@ -31,7 +31,7 @@ Urxvt*background: rgba:0000/0000/0000/cccc
 Urxvt*depth: 32
 
 URxvt.perl-ext:			default,matcher
-URxvt.urlLauncher:		/usr/bin/chromium
+URxvt.urlLauncher:		/usr/bin/firefox
 URxvt.mather.button:		2	
 
 
