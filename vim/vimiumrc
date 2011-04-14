@@ -8,7 +8,9 @@ map s scrollUp
 map S scrollPageUp
 map r scrollRight
 map c scrollLeft
- 
+map G scrollToBottom
+map gg scrollToTop
+
 # copy url
 map y copyCurrentUrl
  
@@ -29,5 +31,5 @@ map u restoreTab
 
 # history
 map C goBack
-map R goFoward
+map R goForward
 map gu goUp
