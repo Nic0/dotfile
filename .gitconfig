@@ -1,0 +1,32 @@
+[user]
+        name = Nicolas Paris
+        email = nicolas.caen@gmail.com
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+[alias]
+	addrm = add -u
+	st = status -s
+	ci = commit
+	co = checkout
+	staged = diff --cached
+	unstage = reset HEAD --
+	ignored = ls-files --others
+	oneline = log --oneline --decorate
+	last = log --oneline -1 HEAD
+	out = log --oneline origin/master..HEAD
+	wdiff = diff --color-words
+	info = remote -v
+	initial = "!sh -c 'git init && git add . && git ci -m \"Initial import\"'"
+	up = "!sh -c 'git stash && git pull && git stash pop'"
+[diff]
+	renames = true
+[branch]
+	autosetupmerge = true
+	autosetuprebase = always
+[push]
+	default = tracking
+[github]
+	user = Nic0
