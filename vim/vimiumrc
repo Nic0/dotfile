@@ -25,7 +25,7 @@ map N performBackwardsFind
 # tabs
 map i previousTab
 map e nextTab
-map j createTab
+map o createTab
 map d removeTab
 map u restoreTab
 
