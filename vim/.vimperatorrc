@@ -1,0 +1,68 @@
+"Comportement de la barre (l = awesome bar, et s = search key)
+set complete=ls
+set wildoptions=auto
+
+"Pour « [[ » et « ]] » permet de les faire fonctionner en Français
+"Ajout de précédent/suivant
+
+set nextpattern=\bnext|suivant\b,^>$,^(>>|»)$,^(>|»),(>|»)$,\bmore\b
+set previouspattern=\bprev|previous|précédent\b,^<$,^(<<|«)$,^(<|«),(<|«)$
+
+"Définie quelles commandes sont ouvertes dans un nouvel onglet
+set newtab=all
+
+
+" [HJKL] -> {CTSR}
+" ————————————————
+" {cr} = « gauche / droite »
+noremap c h
+noremap r l
+" {ts} = « haut / bas »
+noremap t j
+noremap s k
+" {CR} = « haut / bas de l'écran »
+noremap C H
+noremap R L
+
+"T et S pour descendre/monter d'une demi page
+noremap T <C-d>
+noremap S <C-u>
+
+
+" {HJKL} <- [CTSR]
+" ————————————————
+" j ouverture dans nouvel onglet
+noremap j t
+noremap J T
+"utilité ?
+noremap l c
+noremap L C
+" h = reload
+noremap h r
+noremap H R
+" C-k = gh (go home)
+noremap k s
+noremap K S
+
+" Désambiguation de {g}
+" —————————————————————
+" ligne précédante/suivante (à l'intérieur d'une phrase)
+noremap gs gk
+noremap gt gj
+" onglet précédant/suivant
+noremap gé gT
+noremap gp gt
+"Le mode visuel passe en I et i/e servent à passer à l'onglet suivant/précédent
+noremap I i
+noremap i gT
+noremap e gt
+
+" premier/dernier ongegeglet
+noremap gi g^
+noremap ge g0
+
+
+noremap <BS> <C-u>
+noremap <Space> <C-d>
+noremap <Return> zz
+
