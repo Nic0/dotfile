@@ -1,0 +1,72 @@
+########################
+#
+#  Urxvt Section
+#
+###################################
+URxvt.geometry:              80x25
+URxvt.background:            #000000
+URxvt.foreground:            #ffffff
+URxvt.inheritPixmap:         true
+URxvt.reverseVideo:          false
+URxvt.tintColor:             #ffffff
+URxvt.shading:               35            
+#!trans=100, 0=opaque
+URxvt.fading:                0              
+#!term unfocus
+URxvt.font:                  xft:inconsolata:pixelsize=16
+URxvt.boldFont:		     9x15bold,xft:inconsolata
+URxvt.scrollBar:             false
+#URxvt.scrollBar_floating:    true
+#URxvt.scrollBar_right:       true
+#URxvt.scrollColor:           black
+#URxvt.scrollstyle:           xterm
+URxvt.saveLines:             5500
+URxvt.cursorColor:           #7300FF
+URxvt.cursorBlink:           false
+URxvt.colorBD:		     white
+#Pour ne pas avoir de bordures
+URxvt*borderLess:            true 
+
+Urxvt*background: rgba:0000/0000/0000/cccc
+Urxvt*depth: 32
+
+URxvt.perl-ext:			default,matcher
+URxvt.urlLauncher:		/usr/bin/firefox
+URxvt.mather.button:		2	
+
+
+#*color0:     rgb:00/00/00
+#*color1:     rgb:bf/72/76
+#*color2:     rgb:86/af/80
+#*color3:     rgb:96/8a/38
+#*color4:     rgb:36/73/b5
+#*color5:     rgb:9a/70/b2
+#*color6:     rgb:7a/be/cc
+#*color7:     rgb:db/db/db
+#*color8:     rgb:66/92/af
+#*color9:     rgb:e5/50/5f
+#*color10:    rgb:87/bc/87
+#*color11:    rgb:e0/d9/5c
+#*color12:    rgb:1b/85/d6
+#*color13:    rgb:ad/73/ba
+#*color14:    rgb:33/8e/aa
+#*color15:    rgb:f4/f4/f4
+
+
+*color0:     rgb:00/00/00
+*color8:     rgb:66/66/66
+*color1:     rgb:9e/18/28
+*color9:     rgb:bc/57/66
+*color2:     rgb:00/88/00
+*color10:    rgb:61/a1/71
+*color3:     rgb:d2/bb/4b
+*color11:    rgb:e7/db/52
+*color4:     rgb:41/41/71
+*color12:    rgb:50/85/af
+*color5:     rgb:96/3c/59
+*color13:    rgb:a9/7a/99
+*color6:     rgb:41/81/79
+*color14:    rgb:6b/a4/a4
+*color7:     rgb:be/be/be
+*color15:    rgb:ff/ff/ff
+
