@@ -33,7 +33,6 @@ set sm "affiche la parenthèse correspondante
 set title
 set wildmenu
 set noea
-set ruler
 set pt=<F11>
 " Redefinition de l'indentation
 set expandtab
@@ -128,3 +127,6 @@ nmap <leader>v <C-]>
 
 " Le bépo, c'est le bien !
 source /etc/vimrc.bepo
+
+" Templates
+au bufNewFile *.php 0r /usr/share/vim/vimfiles/template/php.php
