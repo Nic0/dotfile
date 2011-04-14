@@ -88,8 +88,8 @@ alias f='find |grep'
 alias c="clear"
 alias dir='ls -1'
 alias ..='cd ..'
-alias hist="grep '$1' /home/paul/.zsh_history"
-alias irssi="irssi -c irc.freenode.net -n yyz"
+alias hist="grep '$1' /home/nicolas/.zsh_history"
+alias sf="app/console"
 alias mem="free -m"
 alias :q="exit"
 
