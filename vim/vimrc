@@ -34,6 +34,7 @@ set title
 set wildmenu
 set noea
 set pt=<F11>
+set ruler
 " Redefinition de l'indentation
 set expandtab
 set shiftwidth=4
@@ -124,6 +125,9 @@ let Tlist_WinWidth = 40
 " remap le saut de fichier/class/fnt avec ctags
 nmap <leader>d <C-t>
 nmap <leader>v <C-]>
+" Fuzzy finder
+nmap ff :FufFile 
+nmap fd :FufDir 
 
 " Le bépo, c'est le bien !
 source /etc/vimrc.bepo
