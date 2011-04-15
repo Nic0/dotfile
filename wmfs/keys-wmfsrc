@@ -73,7 +73,7 @@
         [key] mod = {"Alt", "Shift"} key = "d" func = "set_nmaster" cmd = "-1" [/key]
 
         #Launcher.
-        [key] mod = {"Alt"} key = "e" func = "launcher" cmd = "launcher_exec" [/key]
+        [key] mod = {"Alt"} key = "r" func = "launcher" cmd = "launcher_exec" [/key]
 
         #ViWMFS
         [key] mod = {"Alt"} key = "Escape" func = "launcher" cmd = "viwmfs" [/key]
@@ -112,7 +112,7 @@
         [key] mod = {"Alt", "Super"} key = "F9" func = "tag_toggle_additional" cmd ="9" [/key]
 
         # change screen
-        [key] mod = {"Alt"} key = "r" func = "screen_next" [/key]
+        [key] mod = {"Alt"} key = "d" func = "screen_next" [/key]
         [key] mod = {"Super", "Shift"} key = "Tab" func = "screen_prev" [/key]
 
         # swap client in the next/prev screen
