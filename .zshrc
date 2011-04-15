@@ -88,9 +88,11 @@ alias f='find |grep'
 alias c="clear"
 alias dir='ls -1'
 alias ..='cd ..'
+alias ...='cd ../..'
 alias hist="grep '$1' /home/nicolas/.zsh_history"
 alias sf="app/console"
-alias mem="free -m"
+alias pu="phpunit"
+alias server="/etc/rc.d/httpd start && /etc/rc.d/mysqld start"
 alias :q="exit"
 
 # command L equivalent to command |less

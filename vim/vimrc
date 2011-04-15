@@ -35,6 +35,7 @@ set wildmenu
 set noea
 set pt=<F11>
 set ruler
+set lazyredraw    " Dont refresh screen on macro work
 " Redefinition de l'indentation
 set expandtab
 set shiftwidth=4
@@ -108,6 +109,7 @@ nmap <F5> <Esc>:bprev<CR>
 nmap <F6> <Esc>:bnext<CR>
 map <F10> :NERDTreeToggle<CR>
 
+let NERDTreeWinPos='right'
 
 " gestion de xclip
 vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
@@ -115,6 +117,7 @@ nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 
 " On active le support pour twig
 au BufRead,BufNewFile *.twig set syntax=htmljinja
+au FocusLost silent! :wa
 
 nmap <F9> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR>Goclass <C-R>=expand("%:t:r")<CR><CR>{<CR>
 
