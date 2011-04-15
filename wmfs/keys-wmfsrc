@@ -12,7 +12,7 @@
         [key] mod = {"Control", "Alt", "Shift"} key = "q" func = "quit" [/key]
 
         # Swap current client with the next.
-        [key] mod = {"Alt"} key = "v" func = "client_swap_next" [/key]
+        [key] mod = {"Alt"} key = "Tab" func = "client_swap_next" [/key]
 
         # Swap current client with the previous.
         [key] mod = {"Alt", "Shift"} key = "v" func = "client_swap_prev" [/key]
@@ -116,10 +116,10 @@
         [key] mod = {"Super", "Shift"} key = "Tab" func = "screen_prev" [/key]
 
         # swap client in the next/prev screen
-        [key] mod = {"Alt"} key = "q" func = "client_screen_next" [/key]
+        [key] mod = {"Alt"} key = "v" func = "client_screen_next" [/key]
         [key] mod = {"Alt"} key = "g" func = "client_screen_prev" [/key]
 
-        [key] mod = {"Alt"} key = "e" func = "toggle_tag_expose" [/key]
+        [key] mod = {"Alt"} key = "x" func = "toggle_tag_expose" [/key]
 
         # unlisted fonctions that can be used in [key] func = ""
         # client_focus_{right, left, top, bottom}
