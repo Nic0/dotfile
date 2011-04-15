@@ -35,7 +35,6 @@ set wildmenu
 set noea
 set pt=<F11>
 set ruler
-set lazyredraw    " Dont refresh screen on macro work
 " Redefinition de l'indentation
 set expandtab
 set shiftwidth=4
@@ -117,7 +116,7 @@ nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 
 " On active le support pour twig
 au BufRead,BufNewFile *.twig set syntax=htmljinja
-au FocusLost silent! :wa
+au FocusLost silent! :wa<CR>
 
 nmap <F9> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR>Goclass <C-R>=expand("%:t:r")<CR><CR>{<CR>
 
@@ -125,6 +124,7 @@ nmap <F9> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR>
 " Taglist
 let Tlist_Ctags_Cmd = "/usr/bin/ctags"
 let Tlist_WinWidth = 40
+
 " remap le saut de fichier/class/fnt avec ctags
 nmap <leader>d <C-t>
 nmap <leader>v <C-]>
