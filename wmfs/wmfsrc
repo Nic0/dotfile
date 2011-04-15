@@ -1,0 +1,39 @@
+#
+# This is the default wmfs config file, copy it to
+# ~/.config/wmfs/wmfsrc and edit it.
+#
+
+# Include file to split configuration
+@include "~/.config/wmfs/menu-wmfsrc"
+@include "~/.config/wmfs/bar-wmfsrc"
+@include "~/.config/wmfs/layout-wmfsrc"
+@include "~/.config/wmfs/tags-wmfsrc"
+@include "~/.config/wmfs/keys-wmfsrc"
+@include "~/.config/wmfs/client-wmfsrc"
+@include "~/.config/wmfs/rules-wmfsrc"
+@include "~/.config/wmfs/launcher-wmfsrc"
+
+[misc]
+        font                  = "inconsolata"
+        raisefocus            = true
+        raiseswitch           = false
+        focus_follow_mouse    = true
+        focus_follow_movement = false
+        opacity               = 255
+
+        # focus_pointer_click: click on unfocused client area:
+        # true  -- default, set focus
+        # false -- click go to client; including dockapps
+        focus_pointer_click = true
+        status_timing      = 1     #seconds
+        # status_path       = "~/.config/wmfs/status.sh"
+[/misc]
+
+[root]
+       # Command you can execute to set the background.
+        background_command = "feh --bg-scale /home/nicolas/media/images/paperwall/paperwall.jpg"
+
+        [mouse] button = "4" func = "tag_next"              [/mouse]
+        [mouse] button = "5" func = "tag_prev"              [/mouse]
+        [mouse] button = "3" func = "menu" cmd = "rootmenu" [/mouse]
+[/root]

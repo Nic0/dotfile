@@ -1,0 +1,34 @@
+[bar]
+        bg     = "#191919"
+        fg     = "#D4D4D4"
+        border = false
+        #height = "-1"
+
+        light_shade =  0.10
+        dark_shade  = -0.10
+
+        [systray]
+                # Enable/disable systray
+                active = true
+
+                # Screen of systray
+                screen = 0
+
+                # Spacing between tray icons
+                spacing = 3
+        [/systray]
+
+        # Remove this section to disable the selbar.
+        [selbar]
+                bg = "#191919"
+                fg = "#D4D4ff"
+
+                # Cut title length
+                # max_length = 25
+
+                [mouse] button = "3" func = "clientlist"  [/mouse]
+                [mouse] button = "4" func = "client_next" [/mouse]
+                [mouse] button = "5" func = "client_prev" [/mouse]
+        [/selbar]
+
+[/bar]

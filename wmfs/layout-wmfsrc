@@ -1,0 +1,37 @@
+[layouts]
+        fg = "#191919"
+        bg = "#7E89A2"
+
+        # Border around the layout button.
+        border = false
+
+        # Value menu or switch.
+        system = "menu"
+
+        # Value left or right.
+        placement = "right"
+
+        # Keep layout geo for free layout
+        keep_layout_geo = false
+
+        # Symbol displayed for the selected layout in the list
+        selected_layout_symbol = "*"
+
+        # Width of layout button
+        # layout_button_width = x
+
+        # Tiling layouts.
+        [layout] type = "tile_right"         symbol = "RIGHT"    [/layout]
+        [layout] type = "tile_left"          symbol = "LEFT"     [/layout]
+        [layout] type = "tile_top"           symbol = "TOP"      [/layout]
+        [layout] type = "tile_bottom"        symbol = "BOTTOM"   [/layout]
+        [layout] type = "tile_grid"          symbol = "GRID_H"   [/layout]
+        [layout] type = "tile_grid_vertical" symbol = "GRID_V"   [/layout]
+        [layout] type = "mirror_vertical"    symbol = "MIRROR_V" [/layout]
+        [layout] type = "mirror_horizontal"  symbol = "MIRROR_H" [/layout]
+
+        # Other layouts.
+        [layout] type = "max"   symbol = "MAX"  [/layout]
+        [layout] type = "free"  symbol = "FREE" [/layout]
+
+[/layouts]

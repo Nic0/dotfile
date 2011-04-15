@@ -1,0 +1,137 @@
+[keys]
+         # Reload the configuration of wmfs.
+        [key] mod = {"Alt", "Control"} key = "r" func = "reload" [/key]
+
+        # Open a terminal.
+        [key] mod = {"Alt"} key = "Return" func = "spawn" cmd = "urxvt" [/key]
+
+        # Kill the selected client.
+        [key] mod = {"Alt"} key = "q" func = "client_kill" [/key]
+
+        # Quit wmfs.
+        [key] mod = {"Control", "Alt", "Shift"} key = "q" func = "quit" [/key]
+
+        # Swap current client with the next.
+        [key] mod = {"Alt"} key = "v" func = "client_swap_next" [/key]
+
+        # Swap current client with the previous.
+        [key] mod = {"Alt", "Shift"} key = "v" func = "client_swap_prev" [/key]
+        
+        # Set the selected client as Master
+        [key] mod = {"Control"} key = "m" func = "client_set_master" [/key]
+
+        # Toggle maximum the selected client
+        [key] mod = {"Alt"} key = "m" func = "toggle_max" [/key]
+
+        # Toggle free the selected client.
+        [key] mod = {"Alt"} key = "f" func = "toggle_free" [/key]
+
+        # Toggle the position of the infobar.
+        [key] mod = {"Alt"} key = "b" func = "toggle_infobar_position" [/key]
+        [key] mod = {"Alt", "Shift"} key = "b" func = "toggle_infobar_display" [/key]
+
+        # Toggle the resizehint of the current tag/screen
+        [key] mod = {"Shift", "Control"} key = "r" func = "toggle_resizehint" [/key]
+
+        # Toggle the tag_autohide mode
+        [key] mod = {"Shift", "Control"} key = "t" func = "toggle_tagautohide" [/key]
+
+        # Select the next client.
+        [key] mod = {"Alt"} key = "c" func = "client_next" [/key]
+
+        # Select the previous client.
+        [key] mod = {"Alt","Shift"} key = "Tab" func = "client_prev" [/key]
+
+        # Select the next tag.
+        [key] mod = {"Alt"} key = "s" func = "tag_next" [/key]
+
+        # Select the previous tag.
+        [key] mod = {"Alt"} key = "t" func = "tag_prev" [/key]
+
+        # Select the next visible tag.
+        [key] mod = {"Control","Alt"} key = "Right" func = "tag_next_visible" [/key]
+
+        # Select the previous visible tag.
+        [key] mod = {"Control","Alt"} key = "Left" func = "tag_prev_visible" [/key]
+
+        # Set the next layout.
+        [key] mod = {"Alt"} key = "space" func = "layout_next" [/key]
+
+        # Set the previous layout.
+        [key] mod = {"Alt", "Shift"} key = "space" func = "layout_prev" [/key]
+
+        # Increase mwfact.
+        [key] mod = {"Alt"} key = "l" func = "set_mwfact" cmd = "+0.025" [/key]
+
+        # Decrease mwfact.
+        [key] mod = {"Alt"} key = "h" func = "set_mwfact" cmd = "-0.025" [/key]
+
+        # Increase nmaster.
+        [key] mod = {"Alt"} key = "j" func = "set_nmaster" cmd = "+1" [/key]
+
+        # Decease nmaster.
+        [key] mod = {"Alt", "Shift"} key = "d" func = "set_nmaster" cmd = "-1" [/key]
+
+        #Launcher.
+        [key] mod = {"Alt"} key = "e" func = "launcher" cmd = "launcher_exec" [/key]
+
+        #ViWMFS
+        [key] mod = {"Alt"} key = "Escape" func = "launcher" cmd = "viwmfs" [/key]
+
+        # Set the tag x.
+        [key] mod = {"Alt"} key = "F1" func = "tag" cmd = "1" [/key]
+        [key] mod = {"Alt"} key = "F2" func = "tag" cmd = "2" [/key]
+        [key] mod = {"Alt"} key = "F3" func = "tag" cmd = "3" [/key]
+        [key] mod = {"Alt"} key = "F4" func = "tag" cmd = "4" [/key]
+        [key] mod = {"Alt"} key = "F5" func = "tag" cmd = "5" [/key]
+        [key] mod = {"Alt"} key = "F6" func = "tag" cmd = "6" [/key]
+        [key] mod = {"Alt"} key = "F7" func = "tag" cmd = "7" [/key]
+        [key] mod = {"Alt"} key = "F8" func = "tag" cmd = "8" [/key]
+        [key] mod = {"Alt"} key = "F9" func = "tag" cmd = "9" [/key]
+
+        # Transfert selected client to x.
+        [key] mod = {"Alt", "Shift"} key = "F1" func = "tag_transfert" cmd ="1" [/key]
+        [key] mod = {"Alt", "Shift"} key = "F2" func = "tag_transfert" cmd ="2" [/key]
+        [key] mod = {"Alt", "Shift"} key = "F3" func = "tag_transfert" cmd ="3" [/key]
+        [key] mod = {"Alt", "Shift"} key = "F4" func = "tag_transfert" cmd ="4" [/key]
+        [key] mod = {"Alt", "Shift"} key = "F5" func = "tag_transfert" cmd ="5" [/key]
+        [key] mod = {"Alt", "Shift"} key = "F6" func = "tag_transfert" cmd ="6" [/key]
+        [key] mod = {"Alt", "Shift"} key = "F7" func = "tag_transfert" cmd ="7" [/key]
+        [key] mod = {"Alt", "Shift"} key = "F8" func = "tag_transfert" cmd ="8" [/key]
+        [key] mod = {"Alt", "Shift"} key = "F9" func = "tag_transfert" cmd ="9" [/key]
+
+        # Toggle additional tags (x) on the current tag
+        [key] mod = {"Alt", "Super"} key = "F1" func = "tag_toggle_additional" cmd ="1" [/key]
+        [key] mod = {"Alt", "Super"} key = "F2" func = "tag_toggle_additional" cmd ="2" [/key]
+        [key] mod = {"Alt", "Super"} key = "F3" func = "tag_toggle_additional" cmd ="3" [/key]
+        [key] mod = {"Alt", "Super"} key = "F4" func = "tag_toggle_additional" cmd ="4" [/key]
+        [key] mod = {"Alt", "Super"} key = "F5" func = "tag_toggle_additional" cmd ="5" [/key]
+        [key] mod = {"Alt", "Super"} key = "F6" func = "tag_toggle_additional" cmd ="6" [/key]
+        [key] mod = {"Alt", "Super"} key = "F7" func = "tag_toggle_additional" cmd ="7" [/key]
+        [key] mod = {"Alt", "Super"} key = "F8" func = "tag_toggle_additional" cmd ="8" [/key]
+        [key] mod = {"Alt", "Super"} key = "F9" func = "tag_toggle_additional" cmd ="9" [/key]
+
+        # change screen
+        [key] mod = {"Alt"} key = "r" func = "screen_next" [/key]
+        [key] mod = {"Super", "Shift"} key = "Tab" func = "screen_prev" [/key]
+
+        # swap client in the next/prev screen
+        [key] mod = {"Alt"} key = "q" func = "client_screen_next" [/key]
+        [key] mod = {"Alt"} key = "g" func = "client_screen_prev" [/key]
+
+        [key] mod = {"Alt"} key = "e" func = "toggle_tag_expose" [/key]
+
+        # unlisted fonctions that can be used in [key] func = ""
+        # client_focus_{right, left, top, bottom}
+        # client_ignore_tag # Toggle the client in ignore_tag (display the client on all tags)
+        # tag_prev_sel # go back to the previous selected tag
+        # tag_transfert_{next, prev}
+        # tag_urgent # go to the urgent tag
+        # tag_swap_{next, prev} # swap tag with the previous/next one
+        # tag_last # go to the last tag
+        # tag_stay_last # toggle the current tag as the last one
+        # toggle_abovefc
+        # screen_prev_sel # go to the previous screen selected
+        # set_layout # set layout. need to be called with cmd = "<layout_name>"
+        # ignore_next_client_rules # ignore the rule the next time a rule is called
+[/keys]
