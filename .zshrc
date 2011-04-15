@@ -24,7 +24,7 @@ export PS2="$(print '%{\e[0;34m%}>%{\e[0m%}')"
 
 # Vars used later on by Zsh
 export EDITOR="vim"
-export BROWSER=chromium
+export BROWSER=firefox
 
 ##################################################################
 # Stuff to make my life easier
