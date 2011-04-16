@@ -1,3 +1,4 @@
+#
 [keys]
          # Reload the configuration of wmfs.
         [key] mod = {"Alt", "Control"} key = "r" func = "reload" [/key]

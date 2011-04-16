@@ -1,3 +1,4 @@
+#
 [menu]
         # Default menu, binded on the root window, button 3.
         [set_menu]
