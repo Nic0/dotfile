@@ -1,0 +1,15 @@
+# Ne pas montrer les déjà lu
+show-read-feeds     no
+
+# bepo complient
+bind-key    t       down
+bind-key    s       up
+bind-key    c       open
+bind-key    v       bookmark
+
+# Auto-reload toutes 30 minutes
+auto-reload         yes
+reload-time         30
+
+# Je me fais souvant avoir...
+confirm-exit        yes
