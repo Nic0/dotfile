@@ -1,55 +1,54 @@
-colorscheme desert
+" Use vim settings
+set nocompatible
+filetype on
+filetype indent on
+filetype plugin on
+
 if has("gui_running")
   set gfn=Inconsolata\ 13
-  "set gfn=Droid\ Sans\ Mono\ 12
-  "set gfn=Bitstream\ Vera\ Sans\ Mono\ 11
-  "set gfn=Monaco\ 11
-"  set gcr=a:blinkon0
-"  set go-=T
-"  set go-=m
-"  set go+=c
 endif
 
+" Coloration syntaxique
 syntax on
-" J'utilise des couleurs spécifique au fond foncé
 set background=dark
-" lbr: laisse les mots entier pour longues lignes
-set lbr
-set showcmd
-set ignorecase
-" Activation du support de la souris
-set mouse=a
+colorscheme desert
+let php_htmlInStrings=1 " Permet de colorer du html dans du php
 
-set hidden
-" Indentation automatique
-set autoindent
-set ls=2 "barre de statu en permanance
-hi statusline ctermfg=black 
-set nocp
-set si
-set so=3
-set siso=2 "toujours 2lignes avant la fin
-set sm "affiche la parenthèse correspondante
-set title
-set wildmenu
-set noea
-set pt=<F11>
+set bs=2        " redefinition du backspace
+set lbr         " laisse les mots entier
+set ff=unix     " fin de ligne format unix
+set is          " recherche incrémental
+set ls=2        " barre de statut en permanance
+set noea        " ne pas redimensionner la vue après découpage
+set nohls       " ne pas mettre les termes recherché en surbrillance
+set showcmd
+set noic        " tenir compte de la casse pour la recherche
+set mouse=h     " la souris c'est le mal
+set so=3        " toujours 3 lignes à partir du début
+set siso=2      " toujours 2 lignes avant la fin
+set sm          " affiche la parenthèse correspondante
+set title       " affiche le titre dans la barre de titre du term
+set pt=<F11>    " évite la double indentation lors de c/c
 set ruler
+set wildmenu
+set number      " active la numérotation
+set wildmode=longest,list   " mode le l'autocomplétion
+set spelllang=fr            " correction orthographique
+set textwidth=79            " nombre de caractère par lignes
+"set hidden
+hi statusline   ctermfg=black 
+hi lineNr       ctermfg=blue
+"
 " Redefinition de l'indentation
 set expandtab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
-
-set textwidth=79
-set backspace=2
+set ai          " auto indent
+set si          " identation intéligente
 
 " Personnalisation de la ligne de status
 set statusline=%F%m%r%h%w\ [%Y]\ [%03l-%03v]\ [%p%%]
-set laststatus=0
-let php_htmlInStrings=1
-filetype plugin indent on
-au BufRead,BufNewFile *.rst set textwidth=0
 
 "let g:miniBufExplModSelTarget = 1
 "let g:miniBufExplorerMoreThanOne = 0
@@ -62,7 +61,6 @@ let g:miniBufExplSplitBelow=1
 map <c-w><c-t> :WMToggle<cr>
 let mapleader = ","
 map <leader>d :Dox<cr>
-map <leader>g :GitCommit<cr>
 " Navigation dans les buffeurs
 map <leader>t :bp<cr>
 map <leader>s :bn<cr>
@@ -72,25 +70,11 @@ map <leader>p :!/usr/bin/php -l %<cr>
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
-"autocompletion fichier
-set wildmode=longest,list
-
-" Use the arrows to something usefull
-"map <right> :bn<cr>
-"map <left> :bp<cr>
-
-" Numéro de ligne
-set number
-highlight lineNr ctermfg=blue
-
-" Correcteur orthographique en francais
-" Utile pour mutt
-set spelllang=fr
-
 " Replace espace insécable par X sauf pour .rst
 imap   X
 au BufRead,BufNewFile *.rst imap    
 au BufRead,BufNewFile *.txt imap    
+au BufRead,BufNewFile *.rst set textwidth=0
 
 " Folding
 "map <leader>c zF
@@ -117,8 +101,6 @@ nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 " On active le support pour twig
 au BufRead,BufNewFile *.twig set syntax=htmljinja
 au FocusLost silent! :wa<CR>
-
-nmap <F9> ggO<?php<CR><CR><ESC>"%PdF/r;:s#/#\\#g<CR>Inamespace  <ESC>d/[A-Z]<CR>Goclass <C-R>=expand("%:t:r")<CR><CR>{<CR>
 
 
 " Taglist
