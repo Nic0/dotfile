@@ -23,7 +23,7 @@ set noea        " ne pas redimensionner la vue après découpage
 set nohls       " ne pas mettre les termes recherché en surbrillance
 set showcmd
 set noic        " tenir compte de la casse pour la recherche
-set mouse=h     " la souris c'est le mal
+set mouse=a     " la souris c'est le mal
 set so=3        " toujours 3 lignes à partir du début
 set siso=2      " toujours 2 lignes avant la fin
 set sm          " affiche la parenthèse correspondante
@@ -56,7 +56,7 @@ set statusline=%F%m%r%h%w\ [%Y]\ [%03l-%03v]\ [%p%%]
 "let g:miniBufExplUseSingleClick = 1
 "let g:miniBufExplMapWindowNavVim = 1
 "let g:miniBufExplVSplit = 20
-let g:miniBufExplSplitBelow=1
+"let g:miniBufExplSplitBelow=1
 
 map <c-w><c-t> :WMToggle<cr>
 let mapleader = ","
