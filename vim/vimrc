@@ -126,8 +126,8 @@ au BufWinLeave * mkview
 au BufWinEnter * silent loadview
 " Shortcut
 " create folder
-nmap <leader>f zf
+map <leader>f zf
 " open a folder
-nmap <leader>q zo
+map <leader>q zo
 " close a folder
-nmap <leader>g zm
+map <leader>g zm
