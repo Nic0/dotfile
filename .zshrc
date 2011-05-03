@@ -95,6 +95,7 @@ alias pu="phpunit"
 alias server="/etc/rc.d/httpd start && /etc/rc.d/mysqld start"
 alias :q="exit"
 alias emacs="emacs -nw"
+alias diff="colordiff -u"
 
 # command L equivalent to command |less
 alias -g L='|less' 
