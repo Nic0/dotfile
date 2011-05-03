@@ -76,9 +76,6 @@ au BufRead,BufNewFile *.rst imap    
 au BufRead,BufNewFile *.txt imap    
 au BufRead,BufNewFile *.rst set textwidth=0
 
-" Folding
-"map <leader>c zF
-map <leader>r za
 " Fast saving
 nmap <leader>w :w!<cr>
 nmap <leader>q :wq<cr>
@@ -119,3 +116,18 @@ source /etc/vimrc.bepo
 
 " Templates
 au bufNewFile *.php 0r /usr/share/vim/vimfiles/template/php.php
+au bufNewFile *.py 0r /usr/share/vim/vimfiles/template/py.py
+
+"
+"   FOLDING
+"
+" Save folding
+au BufWinLeave * mkview
+au BufWinEnter * silent loadview
+" Shortcut
+" create folder
+map <leader>f zf
+" open a folder
+map <leader>q zo
+" close a folder
+map <leader>g zm
