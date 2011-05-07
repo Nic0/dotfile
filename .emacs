@@ -1,7 +1,7 @@
 ;; Color theme
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-simple-1)
+(color-theme-clarity)
 
   ;; Affichage de parentaise correspondante
 (require 'paren)
@@ -39,6 +39,8 @@
 
 (global-set-key [C-right]  'enlarge-window-horizontally)
 (global-set-key [C-left]  'shrink-window-horizontally)
+(global-set-key [C-up]  'shrink-window)
+(global-set-key [C-down]  'enlarge-window)
 (global-set-key [S-right]  'windmove-right)
 (global-set-key [S-left]  'windmove-left)
 ;; display column in status bar
@@ -61,3 +63,6 @@
 ;; Display 24 Hours Time
 (display-time)
 (setq display-time-24hr-format t)
+
+;; no menu-bar
+(menu-bar-mode nil)
