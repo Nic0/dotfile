@@ -32,6 +32,7 @@
 (global-set-key [f1] 'split-window-horizontally)
 (global-set-key [f2] 'other-window)
 (global-set-key [f3] 'delete-other-windows)
+(global-set-key [f4] 'hs-toggle-hiding)
 (global-set-key [f5] 'comment-region)
 (global-set-key [S-f5] 'uncoment-region)
 (global-set-key [f8] 'delete-trailing-whitespace)
@@ -66,3 +67,31 @@
 
 ;; no menu-bar
 (menu-bar-mode nil)
+(put 'scroll-left 'disabled nil)
+
+(autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
+(setq auto-mode-alist (append '(("/PKGBUILD$" . pkgbuild-mode)) auto-mode-alist))
+
+(autoload 'python-mode "python-mode.el" "Python mode." t)
+(setq auto-mode-alist (append '(("/*.\.py$" . python-mode)) auto-mode-alist))
+
+;; Markdown coloration
+(autoload 'markdown-mode "markdown-mode.el"
+   "Major mode for editing Markdown files" t)
+(setq auto-mode-alist
+   (cons '("\.md" . markdown-mode) auto-mode-alist))
+
+;;
+;; FOLDING
+;;
+;; hideshow for programming
+;; an easy to use folding function
+(load-library "hideshow")
+(add-hook 'python-mode-hook 'hs-minor-mode)
+(add-hook 'php-mode-hook 'hs-minor-mode)
+(add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
+;; Hide the comments too when you do a 'hs-hide-all'
+(setq hs-hide-comments nil)
+;; Advice from maintener, seem have some problem with vc and ediff
+(add-hook 'ediff-prepare-buffer-hook 'turn-off-hideshow)
+(add-hook 'vc-before-checkin-hook 'turn-off-hideshow)
