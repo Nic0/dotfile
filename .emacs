@@ -59,7 +59,11 @@
       c-basic-offset 4)
 (setq truncate-lines t)
 ;; no tabs
+<<<<<<< HEAD
 ;;(setq-default indent-tabs-mode nil)
+=======
+(setq-default indent-tabs-mode nil)
+>>>>>>> 3b7f8a6888bf9b1db93710b1bec91f74cee866d6
 ;; Display 24 Hours Time
 (display-time)
 (setq display-time-24hr-format t)
