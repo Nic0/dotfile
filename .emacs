@@ -33,6 +33,7 @@
 (global-set-key [f2] 'other-window)
 (global-set-key [f3] 'delete-other-windows)
 (global-set-key [f4] 'hs-toggle-hiding)
+(global-set-key [S-f4] 'hs-hide-level)
 (global-set-key [f5] 'comment-region)
 (global-set-key [S-f5] 'uncoment-region)
 (global-set-key [f8] 'delete-trailing-whitespace)
@@ -60,24 +61,19 @@
       c-basic-offset 4)
 (setq truncate-lines t)
 ;; no tabs
-<<<<<<< HEAD
-;;(setq-default indent-tabs-mode nil)
-=======
+
 (setq-default indent-tabs-mode nil)
->>>>>>> 3b7f8a6888bf9b1db93710b1bec91f74cee866d6
+
 ;; Display 24 Hours Time
 (display-time)
 (setq display-time-24hr-format t)
 
 ;; no menu-bar
-(menu-bar-mode nil)
+;;(menu-bar-mode nil)
 (put 'scroll-left 'disabled nil)
 
 (autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
 (setq auto-mode-alist (append '(("/PKGBUILD$" . pkgbuild-mode)) auto-mode-alist))
-
-(autoload 'python-mode "python-mode.el" "Python mode." t)
-(setq auto-mode-alist (append '(("/*.\.py$" . python-mode)) auto-mode-alist))
 
 ;; Markdown coloration
 (autoload 'markdown-mode "markdown-mode.el"
@@ -85,11 +81,16 @@
 (setq auto-mode-alist
    (cons '("\.md" . markdown-mode) auto-mode-alist))
 
+;; Lua
+(setq auto-mode-alist (cons '("\.lua$" . lua-mode) auto-mode-alist))
+(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+
 ;;
 ;; FOLDING
 ;;
 ;; hideshow for programming
 ;; an easy to use folding function
+(require 'foldout)
 (load-library "hideshow")
 (add-hook 'python-mode-hook 'hs-minor-mode)
 (add-hook 'php-mode-hook 'hs-minor-mode)
@@ -99,3 +100,16 @@
 ;; Advice from maintener, seem have some problem with vc and ediff
 (add-hook 'ediff-prepare-buffer-hook 'turn-off-hideshow)
 (add-hook 'vc-before-checkin-hook 'turn-off-hideshow)
+
+
+;; ECB
+;;In order to actually use ecb you have to follow some more steps:
+;;1. Add the new ECB-directory to your emacs load-path variable.
+;;For example you may add this line into your ~/.emacs file:
+;;(add-to-list 'load-path "/usr/share/emacs/site-lisp/ecb")
+
+;;2. To load ecb at startup:
+;;(require 'ecb)
+;;- or -
+;;To load ecb first after starting it by ecb-activate:
+;;(require 'ecb-autoloads)
