@@ -1,7 +1,7 @@
 ;; Color theme
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-blackboard)
+;(color-theme-blackboard)
 ; was clarity
 
   ;; Affichage de parentaise correspondante
@@ -129,10 +129,10 @@
 ; TODO:
 (font-lock-add-keywords nil '(("\\<\\(TODO\\):" 1 font-lock-warning-face t)))
 ; (), {}, []
-(font-lock-add-keywords 'python-mode
- '(("\\<\\(TODO\\):" 1 font-lock-warning-face prepend)
-   ("\\(\(\\|\)\\|\{\\|\}\\|\\[\\|\\]\\)" . font-lock-preprocessor-face)
-   ("\\(1\\|2\\|3\\|4\\|5\\|6\\|7\\|8\\|9\\|0\\)" . font-lock-function-name-face)))
+;(font-lock-add-keywords 'python-mode
+; '(("\\<\\(TODO\\):" 1 font-lock-warning-face prepend)
+;   ("\\(\(\\|\)\\|\{\\|\}\\|\\[\\|\\]\\)" . font-lock-preprocessor-face)
+;   ("\\(1\\|2\\|3\\|4\\|5\\|6\\|7\\|8\\|9\\|0\\)" . font-lock-function-name-face)))
 
 ;; USENET
 (setq gnus-select-method '(nntp "news.readfreenews.net"))
