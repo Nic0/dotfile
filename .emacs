@@ -1,7 +1,7 @@
 ;; Color theme
 (require 'color-theme)
 (color-theme-initialize)
-;(color-theme-blackboard)
+;;(color-theme-blackboard)
 ; was clarity
 
   ;; Affichage de parentaise correspondante
@@ -33,8 +33,8 @@
 (global-set-key [f1] 'split-window-horizontally)
 (global-set-key [f2] 'other-window)
 (global-set-key [f3] 'delete-other-windows)
-(global-set-key [f4] 'hs-toggle-hiding)
-(global-set-key [S-f4] 'hs-hide-level)
+(global-set-key [f4] 'hide-sublevels)
+(global-set-key [S-f4] 'show-branches)
 (global-set-key [f5] 'comment-region)
 (global-set-key [S-f5] 'uncoment-region)
 (global-set-key [f8] 'delete-trailing-whitespace)
@@ -50,7 +50,7 @@
 (setq column-number-mode t)
 
 ;;affiche les espaces inutile
-(setq-default show-trailing-whitespace t)
+;;(setq-default show-trailing-whitespace t)
 
 ;; indentation automatique sur nouvelle ligne
 (setq-default show-trailing-whitespace t)
@@ -70,7 +70,7 @@
 (setq display-time-24hr-format t)
 
 ;; no menu-bar
-;;(menu-bar-mode nil)
+(menu-bar-mode nil)
 (put 'scroll-left 'disabled nil)
 
 (autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
@@ -159,4 +159,8 @@
 (define-key cm-map "p" 'outline-previous-visible-heading)  ; Previous
 (define-key cm-map "f" 'outline-forward-same-level)        ; Forward - same level
 (define-key cm-map "b" 'outline-backward-same-level)       ; Backward - same level
+; FAST move
+(global-set-key "\M-p" 'outline-backward-same-level)
+(global-set-key "\M-n" 'outline-forward-same-level)
+
 (global-set-key "\M-o" cm-map)
