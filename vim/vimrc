@@ -8,7 +8,11 @@ if has("gui_running")
   set gfn=Inconsolata\ 13
 endif
 
+" keep .swp in another dir
+set directory=/home/nicolas/.vim/tmp
+
 " Coloration syntaxique
+set t_Co=256
 syntax on
 set background=dark
 colorscheme desert
@@ -23,7 +27,7 @@ set noea        " ne pas redimensionner la vue après découpage
 set nohls       " ne pas mettre les termes recherché en surbrillance
 set showcmd
 set noic        " tenir compte de la casse pour la recherche
-set mouse=a     " la souris c'est le mal
+set mouse=a     " la souris
 set so=3        " toujours 3 lignes à partir du début
 set siso=2      " toujours 2 lignes avant la fin
 set sm          " affiche la parenthèse correspondante
@@ -60,7 +64,6 @@ set statusline=%F%m%r%h%w\ [%Y]\ [%03l-%03v]\ [%p%%]
 
 map <c-w><c-t> :WMToggle<cr>
 let mapleader = ","
-map <leader>d :Dox<cr>
 " Navigation dans les buffeurs
 map <leader>t :bp<cr>
 map <leader>s :bn<cr>
@@ -99,6 +102,8 @@ nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 au BufRead,BufNewFile *.twig set syntax=htmljinja
 au FocusLost silent! :wa<CR>
 
+au BufRead,BufNewFile *.doc set syntax=asciidoc
+au BufRead,BufNewFile *.md set syntax=markdown
 
 " Taglist
 let Tlist_Ctags_Cmd = "/usr/bin/ctags"
@@ -111,7 +116,7 @@ nmap <leader>v <C-]>
 nmap ff :FufFile 
 nmap fd :FufDir 
 
-" Le bépo, c'est le bien !
+" Le bépo, c'est le bien !"  
 source /etc/vimrc.bepo
 
 " Templates
@@ -131,3 +136,7 @@ map <leader>f zf
 map <leader>q zo
 " close a folder
 map <leader>g zm
+
+" in case i'm in RO
+cmap w!! %!sudo tee > /dev/null %
+

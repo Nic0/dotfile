@@ -13,14 +13,15 @@ URxvt.shading:               40
 #!trans=100, 0=opaque
 URxvt.fading:                0              
 #!term unfocus
-URxvt.font:                  xft:inconsolata:pixelsize=16
-URxvt.boldFont:		     9x15bold,xft:inconsolata
-URxvt.scrollBar:             false
+!URxvt.font:                  xft:inconsolata:pixelsize=16:antialias=false
+URxvt.font:                 xft:Bitstream Vera Sans Mono:pixelsize=15:antialias=false 
+URxvt.boldFont:		     9x15bold,xft:Bitstream Vera Sans Mono:pixelsize=15:antialias=false
+URxvt.scrollBar:             true
 URxvt.scrollBar_floating:    true
 URxvt.scrollBar_right:       true
 URxvt.scrollColor:           black
 URxvt.scrollstyle:           xterm
-URxvt.saveLines:             5500
+URxvt.saveLines:             10000
 URxvt.cursorColor:           #7300FF
 URxvt.cursorBlink:           false
 URxvt.colorBD:		     white
@@ -35,22 +36,22 @@ URxvt.urlLauncher:		/usr/bin/firefox
 URxvt.mather.button:		2	
 
 
-#*color0:     rgb:00/00/00
-#*color1:     rgb:bf/72/76
-#*color2:     rgb:86/af/80
-#*color3:     rgb:96/8a/38
-#*color4:     rgb:36/73/b5
-#*color5:     rgb:9a/70/b2
-#*color6:     rgb:7a/be/cc
-#*color7:     rgb:db/db/db
-#*color8:     rgb:66/92/af
-#*color9:     rgb:e5/50/5f
-#*color10:    rgb:87/bc/87
-#*color11:    rgb:e0/d9/5c
-#*color12:    rgb:1b/85/d6
-#*color13:    rgb:ad/73/ba
-#*color14:    rgb:33/8e/aa
-#*color15:    rgb:f4/f4/f4
+!#*color0:     rgb:00/00/00
+!#*color1:     rgb:bf/72/76
+!#*color2:     rgb:86/af/80
+!#*color3:     rgb:96/8a/38
+!#*color4:     rgb:36/73/b5
+!#*color5:     rgb:9a/70/b2
+!#*color6:     rgb:7a/be/cc
+!#*color7:     rgb:db/db/db
+!#*color8:     rgb:66/92/af
+!#*color9:     rgb:e5/50/5f
+!#*color10:    rgb:87/bc/87
+!#*color11:    rgb:e0/d9/5c
+!#*color12:    rgb:1b/85/d6
+!#*color13:    rgb:ad/73/ba
+!#*color14:    rgb:33/8e/aa
+!#*color15:    rgb:f4/f4/f4
 
 
 *color0:     rgb:00/00/00
@@ -69,4 +70,28 @@ URxvt.mather.button:		2
 *color14:    rgb:6b/a4/a4
 *color7:     rgb:be/be/be
 *color15:    rgb:ff/ff/ff
+
+URxvt.loginShell:       false
+URxvt.meta:             ignore
+URxvt.utmpInhibit:      true
+
+
+rColor:  #dc74d1
+!URxvt.pointerColor: #dc74d1
+!URxvt.background:   #0e0e0e
+!URxvt.foreground:   #4ad5e1
+!URxvt.color0:       #000000
+!URxvt.color8:       #8b8f93
+!URxvt.color1:       #dc74d1
+!URxvt.color9:       #dc74d1
+!URxvt.color2:       #0eb8c7
+!URxvt.color10:      #0eb8c7
+!URxvt.color3:       #dfe37e
+!URxvt.color11:      #dfe37e
+!URxvt.color5:       #9e88f0
+!URxvt.color13:      #9e88f0
+!URxvt.color6:       #73f7ff
+!URxvt.color14:      #73f7ff
+!URxvt.color7:       #e1dddd
+!URxvt.color15:      #e1dddd
 
