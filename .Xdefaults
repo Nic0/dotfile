@@ -11,7 +11,7 @@ URxvt.reverseVideo:          false
 URxvt.tintColor:             #ffffff
 URxvt.shading:               40            
 #!trans=100, 0=opaque
-URxvt.fading:                0              
+!URxvt.fading:                0              
 #!term unfocus
 !URxvt.font:                  xft:inconsolata:pixelsize=16:antialias=false
 URxvt.font:                 xft:Bitstream Vera Sans Mono:pixelsize=15:antialias=false 
@@ -22,265 +22,42 @@ URxvt.scrollBar_right:       true
 URxvt.scrollColor:           black
 URxvt.scrollstyle:           xterm
 URxvt.saveLines:             10000
-URxvt.cursorColor:           #7300FF
-URxvt.cursorBlink:           false
+!URxvt.cursorColor:           #7300FF
+!URxvt.cursorBlink:           false
 URxvt.colorBD:		     white
 #Pour ne pas avoir de bordures
 URxvt*borderLess:            true 
-
+URxvt.cursorColor: #5E468C
+URxvt.cursorBlink: true
 Urxvt*background: rgba:0000/0000/0000/cccc
 Urxvt*depth: 32
 
 URxvt.perl-ext:			default,matcher
 URxvt.urlLauncher:		/usr/bin/firefox
-URxvt.mather.button:		2	
+URxvt.mather.button:		1	
+URxvt.matcher.rend.0: fg16 RS_Uline
 
+URxvt.transparent: 0
+! teh transparency stuff
+URxvt*inheritPixmap: false
+URxvt*tintColor: #080808
+URxvt*shading: 0
 
-!#*color0:     rgb:00/00/00
-!#*color1:     rgb:bf/72/76
-!#*color2:     rgb:86/af/80
-!#*color3:     rgb:96/8a/38
-!#*color4:     rgb:36/73/b5
-!#*color5:     rgb:9a/70/b2
-!#*color6:     rgb:7a/be/cc
-!#*color7:     rgb:db/db/db
-!#*color8:     rgb:66/92/af
-!#*color9:     rgb:e5/50/5f
-!#*color10:    rgb:87/bc/87
-!#*color11:    rgb:e0/d9/5c
-!#*color12:    rgb:1b/85/d6
-!#*color13:    rgb:ad/73/ba
-!#*color14:    rgb:33/8e/aa
-!#*color15:    rgb:f4/f4/f4
+! -- Xft settings -- !
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hinstyle:   hintslight
 
-
-!*color0:     rgb:00/00/00
-!*color8:     rgb:66/66/66
-!*color1:     rgb:9e/18/28
-!*color9:     rgb:bc/57/66
-!*color2:     rgb:00/88/00
-!*color10:    rgb:61/a1/71
-!*color3:     rgb:d2/bb/4b
-!*color11:    rgb:e7/db/52
-!*color4:     rgb:41/41/71
-!*color12:    rgb:50/85/af
-!*color5:     rgb:96/3c/59
-!*color13:    rgb:a9/7a/99
-!*color6:     rgb:41/81/79
-!*color14:    rgb:6b/a4/a4
-!*color7:     rgb:be/be/be
-!*color15:    rgb:ff/ff/ff
-
-!URxvt.loginShell:       false
-!URxvt.meta:             ignore
-!URxvt.utmpInhibit:      true
-
-
-!rColor:  #dc74d1
-!URxvt.pointerColor: #dc74d1
-!URxvt.background:   #0e0e0e
-!URxvt.foreground:   #4ad5e1
-!URxvt.color0:       #000000
-!URxvt.color8:       #8b8f93
-!URxvt.color1:       #dc74d1
-!URxvt.color9:       #dc74d1
-!URxvt.color2:       #0eb8c7
-!URxvt.color10:      #0eb8c7
-!URxvt.color3:       #dfe37e
-!URxvt.color11:      #dfe37e
-!URxvt.color5:       #9e88f0
-!URxvt.color13:      #9e88f0
-!URxvt.color6:       #73f7ff
-!URxvt.color14:      #73f7ff
-!URxvt.color7:       #e1dddd
-!URxvt.color15:      #e1dddd
-
-
-!!mexico
-!Cursor
-!URxvt.cursorColor: #6da7c8
-!URxvt*cursorBlink: true
-
-!*foreground: #e6eced
-!*background: #1b1d20
-
-!!black
-!*color0: #3b3b3b
-!*color8: #2a2a29
-!!red
-!*color1: #ba4d4d
-!*color9: #984040
-!!green
-!*color2: #94c19b
-!*color10: #7b9f81
-!!yellow
-!*color3: #d7cd94
-!*color11: #b3ab7c
-!!blue
-!*color4: #66AABB
-!*color12: #508a98
-!!magenta
-!*color5: #8e6a80
-!*color13: #745568
-!!cyan
-!*color6: #989081
-!*color14: #827c6f
-!!white
-!*color7: #eae8e6
-!*color15: #cfcdcc
-
-
-!! TexMate
-!*foreground:            #dddddd
-!*background:           #151515
-
-!!black
-!*color0:                   #393939
-!*color8:                   #474747
-
-!!red
-!*color1:                   #da4939
-!*color9:                   #ff6c5c
-
-!!green
-!*color2:                   #519f50
-!*color10:                 #a5c261
-
-!!yellow
-!*color3:                   #cc7833
-!*color11:                  #bc9458
-
-!!blue
-!*color4:                   #6d9cbe
-!*color12:                 #d0d0ff
-
-!!magenta
-!*color5:                   #9f5079
-!*color13:                 #a761c2
-
-!!cyan
-!*color6:                   #435d75
-!*color14:                 #6e98a4
-
-!!white
-!*color7:                   #dddddd
-!*color15:                 #dddddd
-!
-
-! -------------------------------------------------
-! C!oud
-! file:     .colors/woman
-! vim:nu:ai:si:et:ts=4:sw=4:ft=xdefaults:
-! -------------------------------------------------
-
-!black
-!*color0:  #222827
-!*color8:  #5D6F74
-!red
-!*color1:  #D5A8E3
-!*color9:  #CD749C
-!green
-!*color2:  #9C75DD
-!*color10: #63B0B0
-!yellow
-!*color3:  #9898AE
-!*color11: #C0C0DD
-!blue
-!*color4:  #654A96
-!*color12: #5786BC
-!magenta
-!*color5:  #625566
-!*color13: #3F3442
-!cyan
-!*color6:  #A9D1DF
-!*color14: #849DA2
-!white
-!*color7:  #E6EBE5
-!*color15: #D9D6CF
-
-! !black
-!*color0:#060606
-!*color8:#191919
-! !red
-!*color1:#8A2F58
-!*color9:#CF4F88
-! !green
-!*color2:#287373
-!*color10:#53A6A6
-! !yellow
-!*color3:#914E89
-!*color11:#BF85CC
-! !blue
-!*color4:#18618f
-!*color12:#1C86C5
-! !magenta
-!*color5:#5E468C
-!*color13:#7F62B3
-! !cyan
-!*color6:#8CAFF0
-!*color14:#9BBAF1
-! !white
-!*color7:#EDD8D1
-!*color15:#FCEDE3
-!
-!*background: #060606
-!*foreground: #a9a6af
- !!black
-!*color0:  #050505
-!*color8:  #555753
- !!red
-!*color1:  #9c8093
-!*color9:  #ffadcc
- !!green
-!*color2:  #7ac4ad
-!*color10: #9ed7ca
- !!yellow
-!*color3:  #adaa8d
-!*color11: #c4c497
- !!blue
-!*color4:  #3f4f60
-!*color12: #98a7b6
- !!magenta
-!*color5:  #a488d9
-!*color13: #b7a7bc
- !!cyan
-!*color6:  #8d9fa6
-!*color14: #b8ddea
- !!white
-!*color7:  #665c64
-!*color15: #787a76
-
-
-! -------------------------------------------------
-! file:     .colours/dark                           
-! author:   jason ryan - http://jasonwryan.com/    
-!  updated:  26/04/11
-! vim:nu:ai:si:et:ts=4:sw=4:ft=txt:
-! -------------------------------------------------
-
-!! jwr dark
-
-!black
-*color0:#3D3D3D
-*color8:#5E5E5E
-!red
-*color1:#8A2F58
-*color9:#CF4F88
-!green
-*color2:#287373
-*color10:#53A6A6
-!yellow
-*color3:#914E89
-*color11:#BF85CC
-!blue
-*color4:#395573
-*color12:#4779B3
-!magenta
-*color5:#5E468C
-*color13:#7F62B3
-!cyan
-*color6:#2B7694
-*color14:#47959E
-!white
-*color7:#899CA1
-*color15:#C0C0C0
+! -- Colours -- !
+#include "/home/nicolas/.colours/dark"
+!#include "/home/nicolas/.colours/low"
+!#include "/home/nicolas/.colours/old"
+!#include "/home/nicolas/.colours/soft"
+!#include "/home/nicolas/.colours/washed"
+!#include "/home/nicolas/.colours/bright"
+!#include "/home/nicolas/.colours/lich"
+!#include "/home/nicolas/.colours/rab"
+!#include "/home/nicolas/.colours/reasons"
+!#include "/home/nicolas/.colours/zenburn"
