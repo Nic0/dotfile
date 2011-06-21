@@ -9,7 +9,7 @@ URxvt.foreground:            #ffffff
 URxvt.inheritPixmap:         true
 URxvt.reverseVideo:          false
 URxvt.tintColor:             #ffffff
-URxvt.shading:               40            
+URxvt.shading:               25
 #!trans=100, 0=opaque
 !URxvt.fading:                0              
 #!term unfocus
