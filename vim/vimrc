@@ -15,7 +15,8 @@ set directory=/home/nicolas/.vim/tmp
 set t_Co=256
 syntax on
 set background=dark
-colorscheme desert
+"colorscheme desert
+colorscheme miromiro
 let php_htmlInStrings=1 " Permet de colorer du html dans du php
 
 set bs=2        " redefinition du backspace
@@ -88,8 +89,8 @@ nmap <F1> :set spell!<CR>
 nmap <F2> :vsp<CR>
 nmap <F4> :TlistToggle<CR>
 nmap <F3> :badd 
-nmap <F5> <Esc>:bprev<CR>
-nmap <F6> <Esc>:bnext<CR>
+nmap <F5> :bprev<CR>
+nmap <F6> :bnext<CR>
 map <F10> :NERDTreeToggle<CR>
 
 let NERDTreeWinPos='right'
