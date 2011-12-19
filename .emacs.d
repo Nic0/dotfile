@@ -1,1 +1,0 @@
-/home/nicolas/.emacs.d
