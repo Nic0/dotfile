@@ -1,0 +1,24 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;  Global Keybord Shortcut
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(global-set-key [f1] 'split-window-horizontally)
+(global-set-key [f2] 'other-window)
+(global-set-key [f3] 'delete-other-windows)
+(global-set-key [S-f4] 'hide-sublevels)
+(global-set-key [f4] 'show-branches)
+(global-set-key [f5] 'comment-region)
+(global-set-key [S-f5] 'uncomment-region)
+(global-set-key [f6] 'switch-to-buffer)
+(global-set-key [f8] 'delete-trailing-whitespace)
+(global-set-key [f12] 'global-linum-mode)
+
+(global-set-key [C-right]  'enlarge-window-horizontally)
+(global-set-key [C-left]  'shrink-window-horizontally)
+(global-set-key [C-up]  'shrink-window)
+(global-set-key [C-down]  'enlarge-window)
+(global-set-key [S-right]  'windmove-right)
+(global-set-key [S-left]  'windmove-left)
+
+;; keap idententation on new line
+(global-set-key (kbd "RET") 'newline-and-indent)
